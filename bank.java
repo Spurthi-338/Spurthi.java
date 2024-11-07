@@ -44,7 +44,7 @@ class Account {
 
 
 class SavAcct extends Account {
-    private static final double interestRate = 0.04; // 4% interest rate for savings account
+    private static final double interestRate = 0.04; 
 
    
     public SavAcct(String customerName, String accountNumber, double initialBalance) {
@@ -61,8 +61,8 @@ class SavAcct extends Account {
 
 
 class CurAcct extends Account {
-    private static final double MIN_BALANCE = 500; // Minimum balance required for Current Account
-    private static final double PENALTY = 50; // Penalty fee for falling below minimum balance
+    private static final double MIN_BALANCE = 500; 
+    private static final double PENALTY = 50; 
 
    
     public CurAcct(String customerName, String accountNumber, double initialBalance) {
@@ -86,7 +86,7 @@ public class Bank {
         System.out.print("Enter customer name: ");
         String customerName = scanner.nextLine();
 
-        System.out.print("Enter account type (1 for Savings, 2 for Current): ");
+        System.out.print("Enter account type (1 Savings 2 Current): ");
         int accountChoice = scanner.nextInt();
        
         scanner.nextLine();
@@ -112,12 +112,7 @@ public class Bank {
         boolean running = true;
         while (running) {
             System.out.println("\nBank Operations Menu:");
-            System.out.println("1. Deposit");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Display Balance");
-            System.out.println("4. Compute Interest (Savings account only)");
-            System.out.println("5. Check and apply minimum balance penalty (Current account only)");
-            System.out.println("6. Exit");
+            System.out.println("1. Deposit 2. Withdraw 3.Display Balance 4.Compute Interest (Savings account only) 5. Check and apply minimum balance penalty (Current account only) 6. Exit ");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
 
